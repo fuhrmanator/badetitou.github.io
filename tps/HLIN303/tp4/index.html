@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Validation que badetitou est l'auteur pour google -->
+    <meta name="google-site-verification" content="v0CoNWgzPotXcXjDcB8Jtz_2WR-YY__FreCXk4diUOU" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Presentation of Benoît "badetitou" Verhaeghe">
+    <link rel="icon" href="/img/logo/logo.png" type="image/x-icon">
+
+
+    <title>Compilation séparée et bibliothèque - Benoît Verhaeghe</title>
+
+    <link rel="canonical" href="http://badetitou.github.io/tps/HLIN303/tp4/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+    <!-- Material design -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link
+        href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/my.css">
+
+    <link type="application/atom+xml" rel="alternate" href="http://badetitou.github.io/feed.xml" title="Benoît Verhaeghe" />
+
+</head>
+
+<body>
+
+    <header class="mdc-top-app-bar my-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="mdc-top-app-bar__navigation-icon mdc-icon-button material-icons" href="#">menu</button>
+            <a class="mdc-top-app-bar__title my-nav-label" href="/" style="color: inherit;">Benoît Verhaeghe</a>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <a style="color: inherit;" class="mdc-button" href="/teaching/">
+                        <div class="mdc-button__ripple"></div>
+                        <span style="color: inherit;" class="mdc-button__label my-nav-label">Teaching</span>
+                    </a>
+				
+                
+                
+                    <a style="color: inherit;" class="mdc-button" href="/post/">
+                        <div class="mdc-button__ripple"></div>
+                        <span style="color: inherit;" class="mdc-button__label my-nav-label">Posts</span>
+                    </a>
+				
+                
+                
+                    <a style="color: inherit;" class="mdc-button" href="/projects/">
+                        <div class="mdc-button__ripple"></div>
+                        <span style="color: inherit;" class="mdc-button__label my-nav-label">Projects</span>
+                    </a>
+				
+                
+                
+                    <a style="color: inherit;" class="mdc-button" href="/research/">
+                        <div class="mdc-button__ripple"></div>
+                        <span style="color: inherit;" class="mdc-button__label my-nav-label">Research</span>
+                    </a>
+				
+                
+        </section>
+    </div>
+</header>
+
+<aside class="mdc-drawer mdc-drawer--modal">
+<div class="mdc-drawer__content">
+    <nav class="mdc-list">
+        
+                
+                
+            
+        
+                
+                
+            
+        
+                
+                
+            
+        
+                
+                
+            
+        
+                
+                
+            
+        
+                
+                
+            
+        
+                
+                
+            
+        
+        
+                
+                
+            
+        
+                
+                    <a class="mdc-list-item" href="/teaching/" aria-current="page" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text my-nav-label">Teaching</span>
+                    </a>
+				
+            
+        
+                
+                    <a class="mdc-list-item" href="/post/" aria-current="page" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text my-nav-label">Posts</span>
+                    </a>
+				
+            
+        
+                
+                    <a class="mdc-list-item" href="/projects/" aria-current="page" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text my-nav-label">Projects</span>
+                    </a>
+				
+            
+        
+                
+                    <a class="mdc-list-item" href="/research/" aria-current="page" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text my-nav-label">Research</span>
+                    </a>
+				
+            
+        
+        
+        
+        
+  
+    </nav>
+</div>
+</aside>
+
+<div class="mdc-drawer-scrim"></div>
+
+
+
+
+    <!-- Post Header -->
+<header class="intro-header"
+    style="background-image: url('/img/bg/keyboard.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Compilation séparée et bibliothèque</h1>
+                    
+                    <h2 class="subheading">TP4 - Correction</h2>
+                    
+                    <span class="meta">Posted by
+                        Benoît "badetitou" Verhaeghe on
+                        October 21, 2019</span>
+                    <span class="post-meta">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-2"></div>
+        <div class="mdc-layout-grid__cell--span-8">
+
+            <h2 id="tp4---compilation-séparée-et-bibliothèque">TP4 - Compilation séparée et bibliothèque</h2>
+
+<h3 id="exercice-18-td">Exercice 18 (TD)</h3>
+
+<p>Listez les avantages et inconvénients de la liaison statique et dynamique.</p>
+
+<h4 id="solution-18">Solution 18</h4>
+
+<h3 id="exercice-19-tp">Exercice 19 (TP)</h3>
+
+<p>En reprenant l’exercice 13, on souhaite construire une bibliothèque statique (.a) contenant les fonctions pair
+et impair à l’aide de la commande ar.</p>
+
+<ol>
+  <li>Créer les fichiers objets pair.o et impair.o. Puis éditer leurs liens avec le fichier spair.c après compilation
+en construisant l’exécutable spair2.</li>
+  <li>Créer une bibliothèque statique libpair.a contenant les deux fichiers objets pair.o et impair.o. Vérifier
+le contenu de libpair.a.</li>
+  <li>Compiler spair.c et éditer ses liens avec votre bibliothèque dans un exécutable spair3. Tester spair3.</li>
+</ol>
+
+<h4 id="solution-19">Solution 19</h4>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">gcc -c pair.c; gcc -c impair.c; gcc -o spair2 spair.c pair.o impair.o</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ar rs libpair.a pair.o impair.o;ar t libpair.a</code></li>
+  <li><code class="language-plaintext highlighter-rouge">gcc -static spair.c -o spair3 -lpair -L.;spair3 45</code></li>
+</ol>
+
+<h3 id="exercice-20-tp">Exercice 20 (TP)</h3>
+
+<p>En reprenant l’exercice 13, on souhaite construire une bibliothèque dynamique (.so) contenant les fonctions
+pair et impair à l’aide de la commande .</p>
+
+<ul>
+  <li>Créer la bibliothèque dynamique libpair.so contenant les fichiers objets pair.o et impair.o.</li>
+  <li>Compiler spair.c dans un exécutable spair4 puis tester ses liens dynamiques.</li>
+</ul>
+
+<h4 id="solution-20">Solution 20</h4>
+
+<ul>
+  <li>Position Independant Code</li>
+</ul>
+
+<pre><code class="language-no">gcc -fPIC -c pair.c impair.c
+gcc -shared -Wl,-soname,libpair.so.1 -o libpair.so.1 pair.o impair.o
+LD_LIBRARY_PATH=‘pwd‘:$LD_LIBRARY_PATH ; export LD_LIBRARY_PATH
+</code></pre>
+
+<pre><code class="language-no">gcc -o spair4 spair.c -lpair
+ldd spair4
+</code></pre>
+
+<h3 id="exercice-21-tp-bibliothèque-sd">Exercice 21 (TP bibliothèque sd)</h3>
+
+<p>Vous trouverez sur le site <a href="http://www.lirmm.fr/~meynard/">http://www.lirmm.fr/~meynard/</a> des fichiers d’en-tête et des sources C définisssant
+des conteneurs de types génériques :</p>
+
+<ul>
+  <li>liste générique : listeg</li>
+  <li>association ou dictionnaire : assog</li>
+  <li>ensemble : ensg</li>
+  <li>arbre binaire ! arbin g</li>
+  <li>types de base (entier, chaine, flottant, car) : types_base</li>
+</ul>
+
+<p>L’objectif du TP est de construire une bibliothèque statique et une bibliothèque générique contenant les
+objets définis, puis de l’utiliser en écrivant une application simple : calcul de toutes les parties d’un ensemble
+fini d’entier.</p>
+
+<h4 id="solution-21">Solution 21</h4>
+
+<ul>
+  <li>static</li>
+</ul>
+
+<pre><code class="language-no">gcc -c listeg.c types_base.c ensg.c assog.c arbing.c
+ar -rs libsd.a listeg.o types_base.o ensg.o assog.o arbing.o
+gcc -o main -static main.c -lsd -L.
+main 12 45 4 89
+</code></pre>
+
+<ul>
+  <li>dynamic - Position Independant Code</li>
+</ul>
+
+<pre><code class="language-no">gcc -fPIC -c listeg.c types_base.c ensg.c assog.c arbing.c
+gcc -shared -Wl,-soname,libsd.so.1 -o libsd.so.1 listeg.o types_base.o ensg.o
+assog.o arbing.o
+LD_LIBRARY_PATH=‘pwd‘:$LD_LIBRARY_PATH ; export LD_LIBRARY_PATH
+gcc -o dmain -fPIC dmain.c -lsd
+dmain 45 4
+</code></pre>
+
+
+        </div>
+    </div>
+</article>
+
+<hr>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="https://twitter.com/badetitou">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.facebook.com/badetitou">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://orcid.org/0000-0002-4588-2698">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-orcid fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://github.com/badetitou">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.linkedin.com/in/benoitverhaeghe">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="mailto:badetitou@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; badetitou 2020</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js"></script>
+
+<script src="/js/my-drawer.js"></script>
+
+
+</body>
+
+</html>
